@@ -13,7 +13,7 @@ def prim(graph, vertex_quantity):
         for vertex in spanning_vertexes:
             for (neighbour, weight) in graph[vertex]:
                 if neighbour not in spanning_vertexes and weight < min_length:
-                    min_length, current_vertex, current_edges  = weight, neighbour, (vertex, neighbour)
+                    min_length, current_vertex, current_edges = weight, neighbour, (vertex, neighbour)
         spanning_edges.append(current_edges), spanning_vertexes.add(current_vertex)
         full_weight += min_length
     return full_weight, spanning_edges
