@@ -2,7 +2,7 @@ def read_graph_as_lists(vertex_quantity, edge_quantity):
     graph = [[] for i in range(vertex_quantity)]
     for edge in range(edge_quantity):
         link1, link2, weight = [int(x) for x in input().split()]
-        graph[link1].append((link2, int(weight))), graph[link2].append((link1, int(weight)))
+        graph[link1].append((link2, weight)), graph[link2].append((link1, weight))
     return graph
 
 
