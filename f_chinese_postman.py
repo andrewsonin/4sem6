@@ -26,7 +26,7 @@ def expose_odd_vertexes(graph, vertex_quantity):
     return odd_vertexes
 
 
-# FIXME! This functions works for factorial time, but it is possible to make an algorithm that works for polynomial time
+# FIXME! This function works for factorial time, but it is possible to make an algorithm that works for polynomial time!
 def minimal_pairs(graph, weight_matrix, vertex=0, previous=0, used=set(), matching=True):
     used.add(vertex)
     neighbours_length, tmp = float('+inf'), 0
